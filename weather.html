@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/0f194d5f91.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Weather🌤️</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>
+            <span id="h1"> Budapest <span class="number"> <span id="num">21</span></span>
+                <a href="#" id="celsius">
+                    °C
+                </a>
+                /
+                <a href="#" id="fahren">
+                    °F
+                </a>
+            </span>
+            <button class="cur">Current</button>
+        </h1>
+        <h3 id="date"> </h3>
+        <div class="emoji">
+            <h2>
+                <i class="fa-solid fa-cloud-sun cloud"></i>
+            </h2>
+        </div>
+        <form id="city">
+            <input type="text" placeholder="Type your city" autofocus="on" autocomplete="off" id="search-input" />
+            <input id="city-button" type="submit" value="Search">
+        </form>
+        <h4></h4>
+        <div class="row">
+            <div class="col">
+                <div class="box">
+                    <h7>
+                        Monday
+                        <br>
+                        <i class="fa-solid fa-cloud-sun cloud"></i>
+                        <br>
+                    </h7>
+                    <p>
+                        32°
+                    <p class="night">
+                        19°
+                    </p>
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="box">
+                    Tuesday
+                    <br>
+                    <i class="fa-solid fa-cloud-sun cloud"></i>
+                    <p>
+                        33°
+                    <p class="night">
+                        20°
+                    </p>
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="box">
+                    Wednesday
+                    <br>
+                    <i class="fa-solid fa-sun sun"></i>
+                    <p>
+                        34°
+                    <p class="night">
+                        21°
+                    </p>
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="box">
+                    Thursday
+                    <br>
+                    <i class="fa-solid fa-cloud-sun cloud"></i>
+                    <p>
+                        36°
+                    <p class="night">
+                        19°
+                    </p>
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="box">
+                    Friday
+                    <br>
+                    <i class="fa-solid fa-cloud-bolt rain"></i>
+                    <p>
+                        29°
+                    <p class="night">
+                        16°
+                    </p>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div class="img">
+            <img src="img/dog.png" alt="" width="350px">
+        </div>
+    </div>
+    <script src="src/weather.js"></script>
+</body>
+
+</html>

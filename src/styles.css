@@ -1,0 +1,80 @@
+body {
+    padding-top: 20px;
+}
+
+h1 {
+    font-family: "Times New Roman", Times, serif;
+}
+
+.celsius {
+    font-size: 40px;
+}
+.cur{
+position: relative;
+left: 50px;
+font-family: "Times New Roman", Times, serif;
+font-size: large;
+background-color: #ff6884;
+color:#F9EB26;
+border: solid 1px #F9EB26;
+border-radius: 30px;
+padding: 5px 5px;
+}
+
+.cur:hover{
+    background-color: #F9EB26;
+    color:#ff6884;
+    transition: all 150ms ease-in-out;
+}
+
+h3 {
+    font-family: "Times New Roman", Times, serif;
+    font-weight: 100;
+    position: relative;
+    left: 20px;
+}
+
+#city-button{
+    background-color: white;
+    border: 0px solid black;
+}
+
+#city-button:hover{
+    transition: all 150ms ease-in-out;
+    color: red;
+    font-size: 15px;
+}
+
+.emoji {
+    padding: 20px;
+}
+
+.box:hover {
+    padding: 5px;
+    transition: all 150ms ease-in-out;
+    font-size: 20px;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+}
+
+.night {
+    color: lightslategrey;
+}
+
+.cloud {
+    color: orange;
+}
+
+.sun {
+    color: red;
+}
+
+.rain {
+    color: blue;
+}
+
+.img {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
