@@ -9,21 +9,22 @@ h1 {
 .celsius {
     font-size: 40px;
 }
-.cur{
-position: relative;
-left: 50px;
-font-family: "Times New Roman", Times, serif;
-font-size: large;
-background-color: #ff6884;
-color:#F9EB26;
-border: solid 1px #F9EB26;
-border-radius: 30px;
-padding: 5px 5px;
+
+#cur {
+    position: relative;
+    left: 50px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: large;
+    background-color: #ff6884;
+    color: #f9eb26;
+    border: solid 1px #f9eb26;
+    border-radius: 30px;
+    padding: 5px 5px;
 }
 
-.cur:hover{
-    background-color: #F9EB26;
-    color:#ff6884;
+#cur:hover {
+    background-color: #f9eb26;
+    color: #ff6884;
     transition: all 150ms ease-in-out;
 }
 
@@ -34,12 +35,12 @@ h3 {
     left: 20px;
 }
 
-#city-button{
+#city-button {
     background-color: white;
     border: 0px solid black;
 }
 
-#city-button:hover{
+#city-button:hover {
     transition: all 150ms ease-in-out;
     color: red;
     font-size: 15px;
