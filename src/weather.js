@@ -12,6 +12,9 @@ let days = [
 let day = days[now.getDay()];
 let hour = now.getHours();
 let minute = now.getMinutes();
+if (minute < 10) {
+  minute = `0${minute}`
+}
 date.innerHTML = `${day} ${hour}:${minute}`;
 
 function showCity(event) {
@@ -75,6 +78,13 @@ function showCurrentCity() {
         );
       }
 
+      let humidity = document.querySelector("#hum");
+      let wind = document.querySelector("#wind");
+      let description = document.querySelector("#des");
+      description.innerHTML = response.data.weather[0].description;
+      wind.innerHTML = Math.round(response.data.wind.speed);
+      humidity.innerHTML = response.data.main.humidity;
+
       cel.addEventListener("click", showTempC);
       fahren.addEventListener("click", showTempF);
     }
@@ -84,17 +94,8 @@ function showCurrentCity() {
   }
   navigator.geolocation.getCurrentPosition(showPosition);
 }
-function showDescription(response) {
-  console.log(response.data);
-  let humidity = document.querySelector("#hum");
-  let wind = document.querySelector("#wind");
-  let description = document.querySelector("#des");
-  description.innerHTML = response.data.weather[0].description;
-  wind.innerHTML = Math.round(response.data.wind.speed);
-  humidity.innerHTML = response.data.main.humidity;
-}
 
 let currentCity = document.querySelector("#cur");
 currentCity.addEventListener("click", showCurrentCity);
 
-showDescription();
+
