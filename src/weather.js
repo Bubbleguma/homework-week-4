@@ -14,6 +14,8 @@ let hour = now.getHours();
 let minute = now.getMinutes();
 date.innerHTML = `${day} ${hour}:${minute}`;
 
+
+
 function showCity(event) {
   event.preventDefault();
 
