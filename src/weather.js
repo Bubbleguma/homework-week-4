@@ -31,6 +31,13 @@ function showCity(event) {
     let temperature = document.querySelector("#num");
     temperature.textContent = Math.round(response.data.main.temp);
 
+    let humidity = document.querySelector("#hum");
+      let wind = document.querySelector("#wind");
+      let description = document.querySelector("#des");
+      description.innerHTML = response.data.weather[0].description;
+      wind.innerHTML = Math.round(response.data.wind.speed);
+      humidity.innerHTML = response.data.main.humidity;
+
     function showTempC(event) {
       event.preventDefault();
       temperature.textContent = Math.round(response.data.main.temp);
@@ -78,7 +85,7 @@ function showCurrentCity() {
         );
       }
 
-      let humidity = document.querySelector("#hum");
+let humidity = document.querySelector("#hum");
       let wind = document.querySelector("#wind");
       let description = document.querySelector("#des");
       description.innerHTML = response.data.weather[0].description;
