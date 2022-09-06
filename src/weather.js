@@ -30,7 +30,7 @@ function chang(event) {
 }
 
 function displayWeatherCondition(response) {
-  document.querySelector("#city").innerHTML = response.data.name;
+  document.querySelector("#place").innerHTML = response.data.name;
   document.querySelector("#num").innerHTML = Math.round(
     response.data.main.temp
   );
@@ -66,4 +66,4 @@ searchForm.addEventListener("submit", handleSubmit);
 let currentButton = document.querySelector("#cur");
 currentButton.addEventListener("click", getCurrentLocation);
 
-searchCity("");
+searchCity("Budapest");
