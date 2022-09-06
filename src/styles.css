@@ -75,11 +75,7 @@ h3 {
 }
 
 .img {
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-}
-#link{
     position: relative;
-    left: 210px; 
+    left: 1000px;
+    bottom: 20px;
 }

@@ -14,8 +14,6 @@ let hour = now.getHours();
 let minute = now.getMinutes();
 date.innerHTML = `${day} ${hour}:${minute}`;
 
-
-
 function showCity(event) {
   event.preventDefault();
 
@@ -86,6 +84,17 @@ function showCurrentCity() {
   }
   navigator.geolocation.getCurrentPosition(showPosition);
 }
+function showDescription(response) {
+  console.log(response.data);
+  let humidity = document.querySelector("#hum");
+  let wind = document.querySelector("#wind");
+  let description = document.querySelector("#des");
+  description.innerHTML = response.data.weather[0].description;
+  wind.innerHTML = Math.round(response.data.wind.speed);
+  humidity.innerHTML = response.data.main.humidity;
+}
 
 let currentCity = document.querySelector("#cur");
 currentCity.addEventListener("click", showCurrentCity);
+
+showDescription();
